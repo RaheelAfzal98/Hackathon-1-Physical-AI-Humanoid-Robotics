@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'A comprehensive textbook on Physical AI and Humanoid Robotics',
-  url: 'https://your-username.github.io',
+  url: 'https://your-vercel-project.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -77,7 +77,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Your Name. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Created with assistance from Qwen Code AI Assistant. Built with Docusaurus.`,
     },
   },
   presets: [

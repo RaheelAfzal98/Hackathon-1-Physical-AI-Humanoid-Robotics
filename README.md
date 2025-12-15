@@ -4,6 +4,17 @@
 
 This repository contains the implementation of a comprehensive textbook on Physical AI and Humanoid Robotics. The textbook is organized into four core modules covering fundamental to advanced concepts in robotics, with an integrated RAG (Retrieval-Augmented Generation) system to enhance the learning experience.
 
+## About This Project
+
+This textbook was created during a hackathon with significant assistance from an AI coding assistant (Qwen Code) who helped implement and structure the content, features, and architecture. The AI assistant helped with:
+
+- Creating and organizing the Docusaurus-based textbook structure
+- Developing the RAG (Retrieval-Augmented Generation) system
+- Formatting and organizing content across the four core modules
+- Setting up GitHub Actions for automated deployment
+- Implementing clean, maintainable code following best practices
+- Creating consistent, well-structured content across all modules
+
 ## Architecture
 
 ### Book Structure
@@ -107,6 +118,10 @@ The textbook follows strict quality standards:
 - Assessment and quiz systems
 - Multi-language support
 - Advanced simulation integration
+
+## Contributors
+
+Special thanks to the AI coding assistant (Qwen Code) that significantly contributed to the development of this textbook during the hackathon.
 
 ## License
 

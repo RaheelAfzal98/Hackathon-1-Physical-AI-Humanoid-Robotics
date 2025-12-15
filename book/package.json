@@ -2,6 +2,7 @@
   "name": "physical-ai-textbook",
   "version": "1.0.0",
   "private": true,
+  "description": "Physical AI & Humanoid Robotics textbook, created with assistance from Qwen Code AI Assistant",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

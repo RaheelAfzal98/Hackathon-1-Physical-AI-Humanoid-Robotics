@@ -104,13 +104,13 @@ This textbook prepares you to be part of that future—to develop, deploy, and i
 
 ### About the Authors
 
-This textbook was developed using the innovative Spec-Kit Plus methodology with Claude Code assistance, demonstrating the power of AI-assisted content creation. The approach exemplifies how artificial intelligence can enhance human capabilities rather than replace them, producing comprehensive, accurate, and pedagogically sound educational content.
+This textbook was developed using the innovative Spec-Kit Plus methodology with significant assistance from Qwen Code AI Assistant, demonstrating the power of AI-assisted content creation. The approach exemplifies how artificial intelligence can enhance human capabilities rather than replace them, producing comprehensive, accurate, and pedagogically sound educational content.
 
 The methodologies and tools described in this book are not just theoretical concepts—they are the actual tools used to create the book itself, providing a live demonstration of the principles taught herein.
 
 ### Acknowledgments
 
-This textbook was made possible through the application of Spec-Kit Plus methodology and AI-assisted development. We thank the open-source communities whose tools and frameworks make advanced robotics education accessible to everyone.
+This textbook was made possible through the application of Spec-Kit Plus methodology and AI-assisted development with significant help from Qwen Code AI Assistant. We thank the open-source communities whose tools and frameworks make advanced robotics education accessible to everyone.
 
 ### Getting Started
 
