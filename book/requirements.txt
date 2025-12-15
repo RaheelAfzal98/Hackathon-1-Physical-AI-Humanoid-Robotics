@@ -1,4 +1,3 @@
-rclpy==2.0.0
-numpy==1.26.0
-matplotlib==3.7.0
-scipy==1.10.0
+# Requirements for Docusaurus documentation site (no Python dependencies needed for static site)
+# This file exists in case you want to add Python tools for documentation generation
+# For basic Docusaurus deployment, no Python dependencies are required
