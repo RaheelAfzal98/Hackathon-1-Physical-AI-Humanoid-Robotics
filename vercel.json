@@ -1,8 +1,7 @@
 {
-  "root": "book",
   "builds": [
     {
-      "src": "package.json",
+      "src": "book/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
@@ -12,7 +11,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/book/index.html"
     }
   ],
   "github": {
