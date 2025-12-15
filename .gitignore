@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+
+# Docusaurus
+.docusaurus/
+build/
+.cache/
+
+# Python
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+coverage/
+
+# FastAPI
+*.log
+.env*
+.dockerenv
+
+# Local development
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+bin/
+obj/
+out/
+
+# Qdrant
+*.db
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

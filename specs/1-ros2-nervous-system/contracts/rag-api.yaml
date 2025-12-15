@@ -1,0 +1,79 @@
+# RAG API Contract
+
+## Query Endpoint: `/api/rag/query`
+
+### Description
+Endpoint to submit queries to the RAG system to retrieve relevant book content.
+
+### Request
+```
+POST /api/rag/query
+Content-Type: application/json
+
+{
+  "query": "string (the user's query)",
+  "context_length": "integer (optional, default 1000, max 4000 characters)",
+  "top_k": "integer (optional, default 3, number of results to return)"
+}
+```
+
+### Response
+```
+{
+  "query": "string (the original query)",
+  "results": [
+    {
+      "id": "string (unique identifier for the content chunk)",
+      "content": "string (the relevant book content)",
+      "metadata": {
+        "chapter": "string (the chapter title)",
+        "module": "string (the module title)",
+        "url": "string (link to the original content in the book)"
+      },
+      "similarity_score": "float (similarity score from the vector search)"
+    }
+  ],
+  "query_time": "float (time taken to process the query in seconds)"
+}
+```
+
+### Error Responses
+- `400 Bad Request`: Invalid input parameters
+- `500 Internal Server Error`: System error during processing
+
+## Validation Endpoint: `/api/rag/validate`
+
+### Description
+Endpoint to validate if the RAG response is grounded in book content.
+
+### Request
+```
+POST /api/rag/validate
+Content-Type: application/json
+
+{
+  "response": "string (the RAG-generated response)",
+  "sources": [
+    {
+      "id": "string (content chunk ID)",
+      "content": "string (the source content)"
+    }
+  ]
+}
+```
+
+### Response
+```
+{
+  "is_validated": "boolean (whether the response is properly grounded in sources)",
+  "validation_details": {
+    "grounded_percentage": "float (percentage of response that is grounded in sources)",
+    "ungrounded_segments": ["string (list of ungrounded segments)"],
+    "confidence": "float (confidence score of grounding)"
+  }
+}
+```
+
+### Error Responses
+- `400 Bad Request`: Invalid input parameters
+- `500 Internal Server Error`: System error during validation
