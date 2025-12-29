@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-retrieval"
+version = "1.0.0"
+description = "RAG Retrieval Validation System"
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn>=0.24.0",
+    "python-dotenv>=1.0.0",
+    "qdrant-client>=1.9.1",
+    "cohere>=4.0.0",
+    "pydantic>=2.5.0",
+    "pytest>=8.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = ["-v", "--tb=short"]

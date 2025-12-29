@@ -1,13 +1,16 @@
 module.exports = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'A comprehensive textbook on Physical AI and Humanoid Robotics',
-  url: 'https://your-vercel-project.vercel.app',
+  url: 'https://hackathon-1-physical-ai-humanoid-ro-omega.vercel.app',  // Updated to actual deployed URL
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'your-username',
+  organizationName: 'your-organization',  // Updated placeholder
   projectName: 'physical-ai-humanoid-robotics',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',  // Keeping this for now since the proper migration is still showing warnings
+  markdown: {
+    mermaid: true,
+  },
   themeConfig: {
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
@@ -24,7 +27,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/your-username/physical-ai-humanoid-robotics',
+          href: 'https://github.com/your-organization/physical-ai-humanoid-robotics',
           label: 'GitHub',
           position: 'right',
         },
@@ -72,7 +75,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-username/physical-ai-humanoid-robotics',
+              href: 'https://github.com/your-organization/physical-ai-humanoid-robotics',
             },
           ],
         },
@@ -86,7 +89,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/your-username/physical-ai-humanoid-robotics/edit/main/docs/',
+          editUrl: 'https://github.com/your-organization/physical-ai-humanoid-robotics/edit/main/docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
